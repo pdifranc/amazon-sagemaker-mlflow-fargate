@@ -27,8 +27,8 @@ if __name__ =='__main__':
     parser.add_argument('--model-dir', type=str, default=os.environ.get('SM_MODEL_DIR'))
     parser.add_argument('--train', type=str, default=os.environ.get('SM_CHANNEL_TRAIN'))
     parser.add_argument('--test', type=str, default=os.environ.get('SM_CHANNEL_TEST'))
-    parser.add_argument('--train-file', type=str, default='boston_train.csv')
-    parser.add_argument('--test-file', type=str, default='boston_test.csv')
+    parser.add_argument('--train-file', type=str, default='california_train.csv')
+    parser.add_argument('--test-file', type=str, default='california_test.csv')
     parser.add_argument('--features', type=str)  # we ask user to explicitly name features
     parser.add_argument('--target', type=str) # we ask user to explicitly name the target
 
